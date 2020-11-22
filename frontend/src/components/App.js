@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from '../layout/Header';
 import Editor from './Editor';
 
 const App = () => {
   return (
     <div>
-      <h1>  Dev Sandbox </h1>
+     <Header />
       <div className="pane top-pane">
         <Editor></Editor>
         <Editor></Editor>

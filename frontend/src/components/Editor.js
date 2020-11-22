@@ -1,6 +1,7 @@
 import React from 'react';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
+import 'codemirror/theme/yonce.css';
 import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/css/css';
 import 'codemirror/mode/javascript/javascript';
@@ -27,6 +28,7 @@ const Editor = ({ title, value, language, onChange }) => {
                     lint: true,
                     lineNumbers: true,
                     mode: language,
+                    theme: "yonce"
                 }}
             />
         </div>
