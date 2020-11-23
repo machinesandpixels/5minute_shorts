@@ -8,6 +8,14 @@ const App = () => {
   const [css, setCss] = useState('');
   const [js, setJs] = useState('');
 
+  const srcDoc = `
+  <html> 
+  <body>${html}</body>
+  <style>${css}</style>
+  <script>${js}</script>
+  </html>
+  `;
+
   return (
     <div>
      <Header />
@@ -32,12 +40,13 @@ const App = () => {
           />
       </div>
       <div className="pane">
-        <iframe
-         title="output"
-         sandbox="allow-scripts"
-         frameborder="0"
-         width="100%"
-         height="100%">
+        <iframe 
+          srcDoc={srcDoc}
+          title="output"
+          sandbox="allow-scripts"
+          frameborder="0"
+          width="100%"
+          height="100%">
         </iframe>
       </div>
     </div>
