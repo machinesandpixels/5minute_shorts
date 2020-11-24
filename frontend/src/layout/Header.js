@@ -8,20 +8,20 @@ const Header = () => {
     return (
         <Navbar variant="light">
         <Navbar.Brand className="text-white" href="#home">
-            Dev 
+            D e v 
             <BsTerminalFill
             className="ml-3 mr-3" />
-            Sandbox
+            S a n d b o x
         </Navbar.Brand>
         <Nav className="ml-auto">
             <Nav.Link className="text-white" href="#home">
-              Themes
+              T h e m e s
             </Nav.Link>
             <Nav.Link className="text-white" href="#features">
-                Login
+                L o g i n
             </Nav.Link>
             <Nav.Link className="text-white" href="#pricing">
-                Signup
+                S i g n u p
             </Nav.Link>
         </Nav>
       </Navbar>
