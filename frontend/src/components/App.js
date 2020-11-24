@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../layout/Header';
 import Editor from './Editor';
 
@@ -7,15 +7,24 @@ const App = () => {
   const [html, setHtml] = useState('');
   const [css, setCss] = useState('');
   const [js, setJs] = useState('');
+  const [srcDoc, setSrcDoc] = useState('');
 
-  const srcDoc = `
-  <html> 
-  <body>${html}</body>
-  <style>${css}</style>
-  <script>${js}</script>
-  </html>
-  `;
+  useEffect(() => {
+    const timeout = setTimeout(()=> {
+      setSrcDoc( `
+      <html> 
+      <body>${html}</body>
+      <style>${css}</style>
+      <script>${js}</script>
+      </html>
+      `);
+    },250);
 
+    return () => clearTimeout(timeout);
+    
+  }, [html, css, js]);
+
+  
   return (
     <div>
      <Header />
