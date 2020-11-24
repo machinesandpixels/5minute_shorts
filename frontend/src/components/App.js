@@ -48,7 +48,7 @@ const App = () => {
           onChange={setJs}
           />
       </div>
-      <div className="pane">
+      <div className="pane bottom-pane">
         <iframe 
           srcDoc={srcDoc}
           title="output"

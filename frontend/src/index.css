@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: white;
+  /* background-color: white; */
 }
 
 /* This overrides CodeMirror's default height */
@@ -11,6 +11,11 @@ body {
 .pane{
   height: 50vh;
   display: flex;
+  color: white;
+}
+
+.bottom-pane{
+  background-color: white;
 }
 
 .editor--container{
