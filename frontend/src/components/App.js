@@ -30,19 +30,19 @@ const App = () => {
      <Header />
       <div className="pane top-pane">
         <Editor 
-          title='HTML'
+          title='H T M L'
           value={html}
           language='xml'
           onChange={setHtml}
           />
           <Editor 
-          title='CSS'
+          title='C S S'
           value={css}
           language='css'
           onChange={setCss}
           />
           <Editor 
-          title='JavaScript'
+          title='J a v a S c r i p t'
           value={js}
           language='javascript'
           onChange={setJs}
